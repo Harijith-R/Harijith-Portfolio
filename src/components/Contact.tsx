@@ -20,7 +20,7 @@ export default function Contact() {
     const formData = new FormData(e.currentTarget);
     
     // Replace this with your actual Web3Forms Access Key
-    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY");
+    formData.append("access_key", "3daf161e-e2fc-404c-8a06-ad3d242442ef");
     // Append the Turnstile token
     formData.append("cf-turnstile-response", token);
 
@@ -116,7 +116,7 @@ export default function Contact() {
               <Turnstile
                 // This is a dummy testing key provided by Cloudflare that always passes.
                 // Replace it with your actual Cloudflare Turnstile Site Key for production.
-                siteKey="1x00000000000000000000AA"
+                siteKey="0x4AAAAAACtxVqJtqhbfZYZE"
                 onSuccess={(token) => setToken(token)}
                 onError={() => setToken('')}
                 onExpire={() => setToken('')}
